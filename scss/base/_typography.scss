@@ -1,3 +1,20 @@
+@use "../utilities" as u;
 body {
   font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: u.rem(18);
+  font-weight: 700;
+  margin-bottom: u.rem(16);
+  color: var(--very-dark-grayish-blue);
+}
+
+p {
+  font-size: u.rem(15);
+  color: var(--desaturated-dark-blue);
+  line-height: 1.6;
+  letter-spacing: u.rem(0.3);
+  margin-bottom: u.rem(32);
 }
