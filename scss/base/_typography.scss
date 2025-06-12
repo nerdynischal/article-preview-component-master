@@ -9,6 +9,10 @@ h1 {
   font-weight: 700;
   margin-bottom: u.rem(16);
   color: var(--very-dark-grayish-blue);
+
+  @include u.breakpoint(medium) {
+    font-size: u.rem(24);
+  }
 }
 
 p {
@@ -17,4 +21,8 @@ p {
   line-height: 1.6;
   letter-spacing: u.rem(0.3);
   margin-bottom: u.rem(32);
+
+  @include u.breakpoint(medium) {
+    margin-bottom: u.rem(16);
+  }
 }

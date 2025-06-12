@@ -2,23 +2,48 @@
 
 .card-container {
   background: white;
-  max-width: 90%;
+  width: 90%;
+  height: fit-content;
+  max-width: u.rem(900);
   margin: 0 auto;
   border-radius: u.rem(8);
+  box-shadow: u.rem(8) u.rem(16) u.rem(42) rgba(159, 166, 173, 0.227);
 
   .img-container {
-    max-height: u.rem(230);
+    height: u.rem(230);
     overflow: hidden;
 
     img {
       border-top-left-radius: u.rem(8);
       border-top-right-radius: u.rem(8);
+
+      @include u.breakpoint(medium) {
+        border-bottom-left-radius: u.rem(8);
+        border-top-right-radius: 0;
+        height: 100%;
+        object-fit: cover;
+        object-position: 10% 10%;
+      }
     }
+
+    @include u.breakpoint(medium) {
+      height: auto;
+      min-width: u.rem(320);
+    }
+  }
+
+  @include u.breakpoint(medium) {
+    display: flex;
+    align-items: stretch;
   }
 }
 
 .text-container {
   padding: u.rem(42) u.rem(28) u.rem(28) u.rem(28);
+
+  @include u.breakpoint(medium) {
+    padding: u.rem(28);
+  }
 }
 
 .author-container {
