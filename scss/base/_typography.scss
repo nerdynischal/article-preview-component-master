@@ -23,6 +23,6 @@ p {
   margin-bottom: u.rem(32);
 
   @include u.breakpoint(medium) {
-    margin-bottom: u.rem(16);
+    margin-bottom: u.rem(24);
   }
 }

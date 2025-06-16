@@ -1,3 +1,20 @@
+@use "../utilities" as u;
+
 .share-btn {
   z-index: 100;
+  cursor: pointer;
+}
+
+.share-btn:hover {
+  opacity: 0.8;
+}
+
+.icon-container {
+  border-radius: 50%;
+  width: u.rem(36);
+  height: u.rem(36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-grayish-blue);
 }
