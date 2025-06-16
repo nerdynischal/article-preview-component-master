@@ -7,7 +7,6 @@
   max-width: u.rem(900);
   margin: 0 auto;
   border-radius: u.rem(8);
-  position: relative;
   box-shadow: u.rem(8) u.rem(16) u.rem(42) rgba(159, 166, 173, 0.227);
 
   .img-container {
@@ -41,6 +40,7 @@
 
 .text-container {
   padding: u.rem(42) u.rem(28) u.rem(28) u.rem(28);
+  position: relative;
 
   @include u.breakpoint(medium) {
     padding: u.rem(28);
