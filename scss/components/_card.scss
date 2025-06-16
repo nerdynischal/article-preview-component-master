@@ -7,6 +7,7 @@
   max-width: u.rem(900);
   margin: 0 auto;
   border-radius: u.rem(8);
+  position: relative;
   box-shadow: u.rem(8) u.rem(16) u.rem(42) rgba(159, 166, 173, 0.227);
 
   .img-container {
@@ -82,13 +83,14 @@
       color: var(--grayish-blue);
     }
   }
-  .icon-container {
-    border-radius: 50%;
-    width: u.rem(36);
-    height: u.rem(36);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--light-grayish-blue);
-  }
+}
+
+.icon-container {
+  border-radius: 50%;
+  width: u.rem(36);
+  height: u.rem(36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-grayish-blue);
 }

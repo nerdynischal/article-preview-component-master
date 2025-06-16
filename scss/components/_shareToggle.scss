@@ -1,0 +1,36 @@
+@use "../utilities" as u;
+
+.share-container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--very-dark-grayish-blue);
+  padding: u.rem(20) u.rem(28);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom-left-radius: u.rem(8);
+  border-bottom-right-radius: u.rem(8);
+
+  .socials-container {
+    display: flex;
+    gap: u.rem(24);
+
+    .title {
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-weight: 600;
+      font-size: u.rem(15);
+      color: var(--desaturated-dark-blue);
+    }
+  }
+
+  .icon-container {
+    background: var(--desaturated-dark-blue);
+
+    img {
+      color: white;
+    }
+  }
+}
